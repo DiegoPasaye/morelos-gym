@@ -164,11 +164,13 @@ footer div a:hover{
     .infoSomos p{
         font-size: 15px;
         width: 100%;
-        margin-left: 5%;
     }
     .qsomos{
         display: flex;
         flex-direction: column;
+    }
+    .carrusel{
+        height: 40vh;
     }
     .infoSomos{
         display: flex;
