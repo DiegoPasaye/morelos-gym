@@ -67,6 +67,10 @@ nav div a:hover{
     gap: 50px;
     color: rgba(255, 255, 255, 0.8);
 }
+.mobileMenu{
+    visibility: hidden;
+    display: none;
+}
 .qsomos{
     width: 1000px;
     margin-left: 2%;
@@ -207,6 +211,7 @@ footer div a:hover{
     }
     .mostrar{
         visibility: visible;
+        display: block;
     }
 }
 
