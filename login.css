@@ -39,7 +39,7 @@ form{
     border-radius: 15px;
     width: 60%;
     padding: 3% 0;
-    background-color: rgba(144, 129, 170, 0.1);
+    background-color: #9081aa1a;
 }
 form div{
     display: flex;
