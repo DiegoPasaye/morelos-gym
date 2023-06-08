@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Rubik', sans-serif;
+}
+main{
+    background: hsl(218,28%,13%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+nav img{
+    width: 50px;
+}
+.logo{
+    width: 90px;
+}
+nav a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+
+.inscripcion,.mensualidad{
+    display: none;
+}
+
+
+.pay{
+    margin-top: 5%;
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 10px 8px rgba(0, 0, 0,0.1);
+    padding: 40px;
+    gap: 50px;
+    border-radius: 10px;
+}
+.pay h1{
+    font-size: 7vh;
+}
+.pay h3{
+    font-size: 4vh;
+}
+.pay div{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.pay div button{
+    padding: 20px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: transparent;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pay div button:hover{
+    border: 1px solid transparent;
+    color: hsl(218,28%,13%);
+    background: rgba(255, 255, 255, 0.8);
+    transition: 0.5s;
+}
+span{
+    color: rgba(255, 255, 255, 0.5);
+}
