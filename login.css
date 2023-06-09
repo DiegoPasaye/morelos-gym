@@ -75,18 +75,6 @@ form button:hover{
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.errorDatos{
-    color: rgba(255, 0, 0, 0.7);
-    font-size: 20px;
-    text-align: center;
-    display: none;
-}
-.errorInputs{
-    border: 2px solid rgba(255, 0, 0, 0.7);
-}
-.mostrar{
-    display: block;
-}
 
 @media (max-height:800px){
     main{
