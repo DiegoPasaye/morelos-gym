@@ -22,3 +22,26 @@ const send = () => {
         }
     }
 }
+
+
+const inscribirse = () => {
+    document.querySelector(".inscripcion").classList.toggle("mostrar")
+}
+const pagar = () => {
+    document.querySelector(".mensualidad").classList.toggle("mostrar")
+}
+
+document.querySelector(".pagarMes").addEventListener("change", ()=>{
+    console.log(document.querySelector(".pagarMes").options.selectedIndex)
+    if(document.querySelector(".pagarMes").options.selectedIndex == 0){
+        document.querySelectorAll(".botonPago").disabled = true;
+        document.querySelector(".totalPagar").innerHTML = 0
+
+    }else if(document.querySelector(".pagarMes").options.selectedIndex == 1){
+        document.querySelector(".totalPagar").innerHTML = 300
+        document.querySelectorAll(".botonPago").disabled = true;
+    }else if(document.querySelector(".pagarMes").options.selectedIndex == 2){
+        document.querySelector(".totalPagar").innerHTML = 200
+        document.querySelectorAll(".botonPago").disabled = true;
+    }
+})

@@ -26,13 +26,20 @@
         <div class="mensualidad">
             <div class="payTitle">
                 <img src="img/pay.svg" alt="Pay illustration">
+                <select name="opcionPago" class="pagarMes">
+                    <option value="1">Selecciona una opcion</option>
+                    <option value="2">Mes</option>
+                    <option value="3">Quincena</option>
+                </select>
                 <h2>SELECT YOUR PAYMENT METHOD</h2>
-                <p>TOTAL: $400.00</p>
+                <div class="textoPagar">
+                    <p>TOTAL: $<p class="totalPagar">0</p></p>
+                </div>
             </div>
             <div class="botonesPagar">
-                <button class="gpay"><img src="./img/google.svg" alt="G pay icon"></button>
-                <button class="paypal"><img src="./img/paypal.svg" alt="Paypal Icon"></button>
-                <button class="oxxopay"><img src="./img/oxxo_pay.png" alt="Oxxo pay Icon"></button>
+                <button class="gpay botonPago"><img src="./img/google.svg" alt="G pay icon"></button>
+                <button class="paypal botonPago"><img src="./img/paypal.svg" alt="Paypal Icon"></button>
+                <button class="oxxopay botonPago"><img src="./img/oxxo_pay.png" alt="Oxxo pay Icon"></button>
             </div>
         </div>
 
@@ -56,12 +63,13 @@
 
             <div>
                 <!--Despues hacer una validacion, si ya esta inscrito bloquear el boton-->
-                <button>Inscribirme</button>
-                <button>Pagar mensualidad</button>
+                <button onclick="inscribirse()">Inscribirme</button>
+                <button onclick="pagar()">Pagar mensualidad</button>
                 <button>Administrar suscripcion</button>
             </div>
         </section>
 
     </main>
 </body>
+<script src="login.js"></script>
 </html>
