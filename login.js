@@ -45,3 +45,14 @@ document.querySelector(".pagarMes").addEventListener("change", ()=>{
         document.querySelectorAll(".botonPago").disabled = true;
     }
 })
+
+const administrar = () => {
+    document.querySelector(".suscripcion").classList.remove("ocultar")
+    document.querySelector(".suscripcion").classList.toggle("mostrar")
+    //ERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRROR AL MOMENTO DE QUE UN USUARIO QUIERA PAGAR MENSUALIDAD DESPUES DE 1 AÑO INACTIVO
+}
+
+document.querySelector(".close-suscripcion").addEventListener("click", () => {
+    document.querySelector(".suscripcion").classList.toggle("ocultar")
+    document.querySelector(".suscripcion").classList.remove("mostrar")
+})
