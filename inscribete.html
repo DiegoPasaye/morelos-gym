@@ -15,20 +15,22 @@
                 <h1>Sign up</h1>
             </div>
             <div>
-                <input type="text" name="" placeholder="Introduce tu nombre de usuario:">
+                <input class="username" type="text" name="" placeholder="Introduce tu nombre de usuario:">
             </div>
             <div>
-                <input type="text" name="" placeholder="Introduce tu correo:">
+                <input class="email" type="email" name="" placeholder="Introduce tu correo:">
             </div>
             <div>
-                <input type="text" name="" placeholder="Introduce tu numero:">
+                <input class="telefono" type="number" name="" placeholder="Introduce tu numero:">
             </div>
             <div>
-                <input type="number" name="" placeholder="Introduce tu pin (4 Digitos):">
+                <input class="pin" type="number" name="" min="-9999" max="9999" placeholder="Introduce tu pin (4 Digitos):">
             </div>
 
-            <button>Sign Up</button>
+            <p class="errorDatos">Por favor completa los campos</p>
+            <button class="signUpButton" type="button" onclick="send()">Sign Up</button>
         </form>
     </main>
 </body>
+<script src="./inscribete.js"></script>
 </html>

@@ -15,15 +15,20 @@
                 <h1>Sign In</h1>
             </div>
             <div>
-                <input type="text" name="" placeholder="Introduce tu nombre de usuario:">
+                <input class="username input" required type="text" name="" placeholder="Introduce tu nombre de usuario:">
             </div>
 
             <div>
-                <input type="number" name="" placeholder="Introduce tu pin (4 Digitos):">
+                <input class="pin input" required type="number" name="" placeholder="Introduce tu pin (4 Digitos):">
             </div>
 
-            <button>Sign In</button>
+            <p class="errorDatos">Por favor completa los campos</p>
+
+            <button class="login" type="button" onclick="send()">Sign In</button>
+
         </form>
     </main>
 </body>
+
+<script src="./login.js"></script>
 </html>

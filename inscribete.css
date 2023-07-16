@@ -1,5 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
+.payment{
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 102vh;
+    background-color: hsl(218,28%,13%);
+}
+.payment2{
+    background-color: rgba(144, 129, 170, 0.1);
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+.payment div{
+    width: 600px;
+}
+.errorInputs{
+    border: 2px solid rgba(255, 0, 0, 0.7);
+}
+.errorDatos{
+    color: rgba(255, 0, 0, 0.7);
+    font-size: 20px;
+    text-align: center;
+    display: none;
+}
+.payTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.payTitle img{
+    width: 200px;
+}
+.botonesPagar{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.botonesPagar img{
+    width: 100px;
+}
+.botonesPagar button{
+    width: 20%;
+    background: transparent;
+    border: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: rgba(144, 129, 170, 0.1);
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+    border: 1px solid hsl(218,28%,13%);
+    cursor: pointer;
+}
+.botonesPagar button:hover{
+    transition: 0.5s;
+    background: transparent;
+    border: 1px solid hsl(218,28%,13%);
+}
+.gpay img{
+    width: 50px;
+    height: 50px;
+}
+.paypal img{
+    width: 80px;
+    height: 80px;
+}
+.oxxopay img{
+    width: 80px;
+    height: 20px;
+}
+
 *{
     color: white;
     margin: 0;
@@ -75,6 +154,9 @@ form button:hover{
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+.mostrar{
+    visibility: visible;
+}
 
 @media (max-height:800px){
     main{
@@ -101,5 +183,29 @@ form button:hover{
     }
     form{
         padding: 5% 0;
+    }
+}
+
+@media (max-width:670px){
+    .payment{
+        padding: 5% 0;
+    }
+    .payment2{
+        width: 90%;
+        margin: 5% 0;
+    }
+    .payTitle{
+        margin-left: 5%;
+    }
+    .payment div{
+        width: 90%;
+    }
+    .botonesPagar{
+        width: 90%;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .botonesPagar button{
+        width: 100%;
     }
 }
