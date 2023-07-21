@@ -42,12 +42,14 @@ nav div a:hover{
 }
 
 .carrusel{
-    height: 90vh;
-    width: 100%;
+    height: 60vh;
+    width: 80%;
+    margin-left: 10%;
 }
 .carrusel img{
-    height: 90vh;
+    height: 60vh;
 }
+
 
 
 .information{
@@ -209,11 +211,11 @@ footer div a:hover{
         visibility: visible;
         display: block;
     }
-    .carousel-item{
-        height: 50vh;
-    }
     .carrusel{
-        height: 50vh;
+        height: 40vh;
+    }
+    .carousel-item{
+        height: 40vh;
     }
 }
 
@@ -222,10 +224,10 @@ footer div a:hover{
         width: 70px;
     }
     .carousel-item{
-        height: 40vh;
+        height: 30vh;
     }
     .carrusel{
-        height: 40vh;
+        height: 30vh;
     }
 }
 
