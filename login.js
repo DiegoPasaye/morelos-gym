@@ -15,7 +15,7 @@ const send = () => {
         document.querySelector(".pin").classList.remove("errorInputs")
         if(document.querySelector(".username").value == "admin" && document.querySelector(".pin").value == "0000"){
             console.log("bienvenido")
-            document.location.href = "./admin.html"
+            document.location.href = "./perfil.html"
         }else{
             console.log("rechazadp")
             console.log(document.querySelector(".username").value)
